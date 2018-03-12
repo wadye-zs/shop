@@ -3,7 +3,6 @@ import java.security.MessageDigest;
 import java.util.Calendar;
 
 import com.zx.BaseTest;
-import com.zx.util.MD5Util;
 import com.zx.util.NowDate;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +13,7 @@ public class AccountRegisterTest extends BaseTest {
 	MessageDigest md; 
 	@Test
 	public void Register(){
-		String s= MD5Util.MD5("123");
-		System.out.println(s);
+		String s=MD5Util_Test.MD5("123");
 		System.out.println(s);
 		   Calendar ca = Calendar.getInstance();
 		      int year = ca.get(Calendar.YEAR);//获取年份
