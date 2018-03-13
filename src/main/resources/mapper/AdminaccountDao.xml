@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zx.dao.AdminaccountDao">
-	<select id="queryAdminaccountByNameAndPwd" resultType="com.zx.beans.AdminAccount" parameterType="String">
+<mapper namespace="com.shop.dao.AdminaccountDao">
+	<select id="queryAdminaccountByNameAndPwd" resultType="com.shop.beans.AdminAccount" parameterType="String">
 		SELECT username, password
 		FROM adminAccount
 		WHERE

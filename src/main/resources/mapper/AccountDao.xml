@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zx.dao.AccountDao">
-	<select id="queryAccountByNameAndPwd" resultType="com.zx.beans.Account" parameterType ="String">
+<mapper namespace="com.shop.dao.AccountDao">
+	<select id="queryAccountByNameAndPwd" resultType="com.shop.beans.Account" parameterType ="String">
 		SELECT Username, Password
 		FROM account
 		WHERE
@@ -11,7 +11,7 @@
 		AND
 		Password = #{password}
 	</select>
-	<select id = "queryAccountByName" resultType = "com.zx.beans.Account" parameterType ="String">
+	<select id = "queryAccountByName" resultType = "com.shop.beans.Account" parameterType ="String">
  	    SELECT Username
  	    From account
  	    WHERE
